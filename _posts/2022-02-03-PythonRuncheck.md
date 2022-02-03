@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "프로그램 실행 여부 판단 및 실행/종료 기능 구현"
-categories: "PYTHON"
+categories: "Python"
 tags: [Python]
 toc: true
 author_profile: false
@@ -44,7 +44,7 @@ import os, signal
 #     time.sleep(1)
 ```
 
-<img src="./images/Runcheck_file_img1.jpg" width="500px" />
+![](C:\KyuHan\blog\Kyuhan1230.github.io\_posts\images\Runcheck_file_img1.jpg)
 
 
 ```python
@@ -91,7 +91,7 @@ print(target + " 프로그램이 종료되었습니다.")
 
 
 ### 스크립트 종료 확인
-<img src="./images/Runcheck_file_img2.jpg" width="500px" />
+
 
 ## Script 실행시키기
 
