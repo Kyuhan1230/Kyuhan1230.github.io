@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "프로그램 실행 여부 판단 및 실행/종료 기능 구현"
-categories: "Python"
+# categories: "Python"
 tags: [Python]
 toc: true
 author_profile: false
