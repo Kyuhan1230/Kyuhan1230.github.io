@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "프로그램 실행 여부 판단 및 실행/종료 기능 구현"
-# categories: "Python"
+categories: "Python"
 tags: [Python]
 toc: true
 author_profile: false
@@ -44,7 +44,7 @@ import os, signal
 #     time.sleep(1)
 ```
 
-<img src="../images/2022-02-03-PythonRuncheck/Runcheck_file_img1.jpg" alt="Runcheck_file_img1" style="zoom:67%;" />
+<img src="../assets/images/2022-02-03-PythonRuncheck/Runcheck_file_img1.jpg" alt="Runcheck_file_img1" style="zoom:67%;" />
 
 
 ```python
@@ -89,7 +89,7 @@ print(target + " 프로그램이 종료되었습니다.")
 
     run1.py 프로그램이 종료되었습니다.
 
-<img src="../images/2022-02-03-PythonRuncheck/Runcheck_file_img2.jpg" alt="Runcheck_file_img2" style="zoom:67%;" />
+<img src="/assets/images/2022-02-03-PythonRuncheck/Runcheck_file_img2.jpg" alt="Runcheck_file_img2" style="zoom:67%;" />
 
 
 ## Script 실행시키기
@@ -106,11 +106,11 @@ print(target + " 파일을 실행합니다.")
 
 
 
-<img src="../images/2022-02-03-PythonRuncheck/Runcheck_file_img3.jpg" alt="Runcheck_file_img3" style="zoom:67%;" />
+<img src="/assets/images/2022-02-03-PythonRuncheck/Runcheck_file_img3.jpg" alt="Runcheck_file_img3" style="zoom:67%;" />
 
 이 실습 코드를 중지시키려다가 실행 중 인 다른 코드도 중지될 수 있다.
 
-<img src="../images/2022-02-03-PythonRuncheck/Runcheck_file_img4.jpg" alt="Runcheck_file_img4" style="zoom:67%;" />
+<img src="/assets/images/2022-02-03-PythonRuncheck/Runcheck_file_img4.jpg" alt="Runcheck_file_img4" style="zoom:67%;" />
 
 실습은 여기까지 하고 class로 만들어서 활용해야겠음.
 
