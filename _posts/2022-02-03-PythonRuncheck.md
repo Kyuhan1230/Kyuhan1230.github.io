@@ -44,7 +44,7 @@ import os, signal
 #     time.sleep(1)
 ```
 
-<img src="../assets/images/2022-02-03-PythonRuncheck/Runcheck_file_img1.jpg" alt="Runcheck_file_img1" style="zoom:67%;" />
+<img src="/assets/images/2022-02-03-PythonRuncheck/Runcheck_file_img1.jpg" alt="Runcheck_file_img1" style="zoom:67%;" />
 
 
 ```python
