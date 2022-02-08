@@ -118,6 +118,12 @@ print(target + " 파일을 실행합니다.")
 
 
 ```python
+import os
+import time
+import psutil
+import signal
+
+
 class CheckCode:
     def __init__(self, path, target_file):
         self.start_time = time.time()
@@ -128,9 +134,9 @@ class CheckCode:
         self.turn_on = None
 
     def is_running(self):
-        check = [p.info for p in psutil.process_iter(attrs=['pid', 'name','cmdline']) 
-        if ('python' in p.info['name'] and p.cmdline()[-1] == self.target)]
-        
+        check = [p.info for p in psutil.process_iter(attrs=['pid', 'name','cmdline'])
+                 if ('python' in p.info['name'] and p.cmdline()[-1] == self.target_path)]
+
         if len(check) > 0:
             self.turn_on = "Yes"
             self.pid = check[0]['pid']
@@ -143,7 +149,10 @@ class CheckCode:
                 
         return self.turn_on
         
-    def run_target(self):
+    def run(self):
+        self.is_running()
+
+    def run_my_code(self):
         self.is_running()
         if self.turn_on == "Yes":
             print(self.target + " 파일이 실행 중 입니다.")
@@ -152,7 +161,7 @@ class CheckCode:
             print(self.target + " 파일을 실행합니다.")
             os.system('python ' + self.target_path)
 
-    def stop_target(self):
+    def stop_my_code(self):
         self.is_running()
         if self.turn_on == "Yes":
             if self.pid is not None:
