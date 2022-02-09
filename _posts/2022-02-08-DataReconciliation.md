@@ -382,12 +382,12 @@ x_recon = dr.reconciliate(jacobian, measured_x, sigma_from_data=sigma)
 ​       Equations    :            9
 ​       Residuals    :            9
 ​     
-     Number of state variables:             16
-     Number of total equations: -            8
-     Number of slack variables: -            0
-     ---------------------------------------
-     Degrees of freedom       :              8
-     
+​     Number of state variables:             16
+​     Number of total equations: -            8
+​     Number of slack variables: -            0
+​     ---------------------------------------
+​     Degrees of freedom       :              8
+​     
      **********************************************
      Steady State Optimization with Interior Point Solver
      **********************************************
@@ -396,12 +396,12 @@ x_recon = dr.reconciliate(jacobian, measured_x, sigma_from_data=sigma)
 ​      
 ​     Info: Exact Hessian
 ​    
-    ******************************************************************************
-    This program contains Ipopt, a library for large-scale nonlinear optimization.
-     Ipopt is released as open source code under the Eclipse Public License (EPL).
-             For more information visit http://projects.coin-or.org/Ipopt
-    ******************************************************************************
-    
+​    ******************************************************************************
+​    This program contains Ipopt, a library for large-scale nonlinear optimization.
+​     Ipopt is released as open source code under the Eclipse Public License (EPL).
+​             For more information visit http://projects.coin-or.org/Ipopt
+​    ******************************************************************************
+​    
     This is Ipopt version 3.12.10, running with linear solver ma57.
     
     Number of nonzeros in equality constraint Jacobian...:      128
@@ -446,8 +446,8 @@ x_recon = dr.reconciliate(jacobian, measured_x, sigma_from_data=sigma)
 ​    Total CPU secs in IPOPT (w/o function evaluations)   =      0.004
 ​    Total CPU secs in NLP function evaluations           =      0.002
 ​    
-    EXIT: Optimal Solution Found.
-     
+​    EXIT: Optimal Solution Found.
+​     
      The solution was found.
      
      The final value of the objective function is    348.194281237759     
@@ -526,4 +526,3 @@ x_recon = dr.reconciliate(jacobian, measured_x, sigma_from_data=sigma)
  다른 값에는 어떠한 Error, Noise가 들어가 있지 않아 보정된 데이터와 정답이 매우 유사하나 
  실제 데이터는 이와 사뭇 다름.
  </pre>
-
